@@ -1,0 +1,2 @@
+20140603224928 diskflat-002 reuse BLOCKSIZE:32 POOL:local_new STORAGE:my_diskflat CONFIG:local_new
+20140531053815 diskflat-001 reuse BLOCKSIZE:32 POOL:local_new STORAGE:my_diskflat CONFIG:local_new

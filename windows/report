@@ -1,0 +1,81 @@
+Hostname: carbonite-appliance
+Org     : MyConfig
+Config  : windows
+Date    : May 28, 2014
+
+These dumps were to tape MyData02.
+There are 2k of dumps left in the holding disk.
+Run amflush to flush them to tape.
+
+The next tape Amanda expects to use is: 1 new tape.
+The next new tape already labelled is: MyData03.FAILURE DUMP SUMMARY:
+  10.5.2.148 "C:/Users/zhuang/Music" lev 0  FAILED [client CRC (6763db7a:1734597498) do not match data-in CRC (6763db7a:1371)]
+  10.5.2.148 "C:/Users/zhuang/Music" lev 0  FAILED [client CRC (d07e0308:3497919240) do not match data-in CRC (d07e0308:1371)]
+  10.5.2.148 "C:/Users/zhuang/Music" lev 0  partial taper: successfully taped a partial dump
+
+
+
+STATISTICS:
+                          Total       Full      Incr.   Level:#
+                        --------   --------   --------  --------
+Estimate Time (hrs:min)     0:00
+Run Time (hrs:min)          0:00
+Dump Time (hrs:min)         0:00       0:00       0:00
+Output Size (meg)            0.0        0.0        0.0
+Original Size (meg)          0.0        0.0        0.0
+Avg Compressed Size (%)      --         --         --
+DLEs Dumped                    0          0          0
+Avg Dump Rate (k/s)          --         --         --
+
+Tape Time (hrs:min)         0:00       0:00       0:00
+Tape Size (meg)              0.0        0.0        0.0
+Tape Used (%)                0.0        0.0        0.0
+DLEs Taped                     1          1          0
+Parts Taped                    1          1          0
+Avg Tp Write Rate (k/s)     10.0       10.0        --
+
+USAGE BY TAPE:
+  Label                 Time         Size      %  DLEs Parts
+  MyData02              0:00           1k    0.0     1     1
+
+FAILED DUMP DETAILS:
+  /-- 10.5.2.148 "C:/Users/zhuang/Music" lev 0 FAILED [client CRC (6763db7a:1734597498) do not match data-in CRC (6763db7a:1371)]
+  sendbackup: start [10.5.2.148:"C:/Users/zhuang/Music" level 0]
+  sendbackup: info BACKUP=pkzip
+  sendbackup: info RECOVER_CMD=Extract with zmanda windows client or unzip program
+  sendbackup: info end
+  | Total bytes written: 1626 (1KiB, 1626KiB/s)
+  | Total bytes backed up: 1528 
+  | Total Files Checked: 1 Total Files Attempted: 1 Total files backed up: 1 Total files excluded:  0
+  | ZWC Backup ID: 17 
+  sendbackup: size 1
+  sendbackup: client-CRC 6763db7a:1734597498
+  sendbackup: end
+  \--------
+  /-- 10.5.2.148 "C:/Users/zhuang/Music" lev 0 FAILED [client CRC (d07e0308:3497919240) do not match data-in CRC (d07e0308:1371)]
+  sendbackup: start [10.5.2.148:"C:/Users/zhuang/Music" level 0]
+  sendbackup: info BACKUP=pkzip
+  sendbackup: info RECOVER_CMD=Extract with zmanda windows client or unzip program
+  sendbackup: info end
+  | Total bytes written: 1626 (1KiB, 1626KiB/s)
+  | Total bytes backed up: 1528 
+  | Total Files Checked: 1 Total Files Attempted: 1 Total files backed up: 1 Total files excluded:  0
+  | ZWC Backup ID: 18 
+  sendbackup: size 1
+  sendbackup: client-CRC d07e0308:3497919240
+  sendbackup: end
+  \--------
+
+NOTES:
+  planner: Last full dump of 10.5.2.148:"C:/Users/zhuang/Music" on tape MyData01 overwritten in 3 runs.
+  taper: Slot 2 with label MyData02 is usable
+  taper: tape MyData02 kb 1 fm 1 [OK]
+
+
+DUMP SUMMARY:
+                                                               DUMPER STATS   TAPER STATS
+HOSTNAME     DISK                    L ORIG-kB  OUT-kB  COMP%  MMM:SS   KB/s MMM:SS   KB/s
+-------------------------------------- ---------------------- -------------- -------------
+10.5.2.148   "C:/Users/zhuang/Music" 0               1    --     PARTIAL       0:00   10.0 PARTIAL
+
+(brought to you by Amanda version 0trunk.5748)

@@ -1,0 +1,45 @@
+Hostname: carbonite-appliance
+Org     : mssql with diskflat
+Config  : mssql_new
+Date    : June 3, 2014
+
+These dumps were to tape diskflat-001.
+The next tape Amanda expects to use is: 1 new tape.
+
+
+STATISTICS:
+                          Total       Full      Incr.   Level:#
+                        --------   --------   --------  --------
+Estimate Time (hrs:min)     0:00
+Run Time (hrs:min)          0:01
+Dump Time (hrs:min)         0:00       0:00       0:00
+Output Size (meg)           28.2       28.2        0.0
+Original Size (meg)         76.3       76.3        0.0
+Avg Compressed Size (%)     36.9       36.9        --
+DLEs Dumped                    1          1          0
+Avg Dump Rate (k/s)       1263.9     1263.9        --
+
+Tape Time (hrs:min)         0:00       0:00       0:00
+Tape Size (meg)             28.2       28.2        0.0
+Tape Used (%)               14.1       14.1        0.0
+DLEs Taped                     1          1          0
+Parts Taped                    1          1          0
+Avg Tp Write Rate (k/s)   1310.6     1310.6        --
+
+USAGE BY TAPE:
+  Label                 Time         Size      %  DLEs Parts
+  diskflat-001          0:00       28833k   14.1     1     1
+
+NOTES:
+  planner: Last full dump of 10.5.100.15:ZMC_MSSQL on tape MyData01 overwritten in 1 run.
+  taper: Slot 1 without label can be labeled
+  taper: tape diskflat-001 kb 28833 fm 1 [OK]
+
+
+DUMP SUMMARY:
+                                                   DUMPER STATS   TAPER STATS
+HOSTNAME     DISK        L ORIG-kB  OUT-kB  COMP%  MMM:SS   KB/s MMM:SS   KB/s
+-------------------------- ---------------------- -------------- -------------
+10.5.100.15  ZMC_MSSQL   0   78083   28833   36.9    0:23 1263.9   0:22 1310.6
+
+(brought to you by Amanda version 0trunk.5748)

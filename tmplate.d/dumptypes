@@ -1,0 +1,13 @@
+define dumptype zwc-normal {
+	global
+	auth "bsdtcp"
+	program "DUMP"
+}
+
+define dumptype zwc-compress {
+	global
+	auth "bsdtcp"
+	maxdumps 1
+	compress client fast
+	program "DUMP"
+}
